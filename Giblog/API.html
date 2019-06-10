@@ -26,32 +26,32 @@
 
   </div>
   <div class="middle">
-    <h1 id="pod">名前</h1>
+    <h1 id="">&#x540D;&#x524D;</h1>
 
 <p>Giblog::API - Giblog API</p>
 
-<h1 id="pod1">説明</h1>
+<h1 id="1">&#x8AAC;&#x660E;</h1>
 
-<p>Giblog::APIではHTMLコンテンツを扱うためのメソッドを定義しています。</p>
+<p>Giblog::API&#x3067;&#x306F;HTML&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x6271;&#x3046;&#x305F;&#x3081;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
 
-<h1 id="pod2">メソッド</h1>
+<h1 id="2">&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h1>
 
 <h2 id="new">new</h2>
 
 <pre><code>my $api = Giblog::API-&gt;new(%params);</code></pre>
 
-<p><a href="/Giblog/API.html">Giblog::API</a>オブジェクトを作成します。</p>
+<p><a href="/Giblog/API.html">Giblog::API</a>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>パラメーター:</b></p>
+<p><b>&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x30FC;:</b></p>
 
 <ul>
 
-<li><p>giblog - <a href="/Giblog.html">Giblog</a>オブジェクト</p>
+<li><p>giblog - <a href="/Giblog.html">Giblog</a>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</p>
 
 </li>
 </ul>
 
-<p>「giblog」メソッドを呼び出せば、このパラメータにアクセスできます。</p>
+<p>&#x300C;giblog&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x547C;&#x3073;&#x51FA;&#x305B;&#x3070;&#x3001;&#x3053;&#x306E;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>my $giblog = $api-&gt;giblog;</code></pre>
 
@@ -59,31 +59,31 @@
 
 <pre><code>my $giblog = $api-&gt;giblog;</code></pre>
 
-<p><a href="/Giblog.html">Giblog</a>オブジェクトを取得します。</p>
+<p><a href="/Giblog.html">Giblog</a>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="config">config</h2>
 
 <pre><code>my $config = $api-&gt;config;</code></pre>
 
-<p>Giblogのコンフィグを取得します。これは、ハッシュリファレンスです。</p>
+<p>Giblog&#x306E;&#x30B3;&#x30F3;&#x30D5;&#x30A3;&#x30B0;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306F;&#x3001;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x30EA;&#x30D5;&#x30A1;&#x30EC;&#x30F3;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
 
-<p>コンフィグは「read_config」メソッドによって、ロードできます。</p>
+<p>&#x30B3;&#x30F3;&#x30D5;&#x30A3;&#x30B0;&#x306F;&#x300C;read_config&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x3088;&#x3063;&#x3066;&#x3001;&#x30ED;&#x30FC;&#x30C9;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
-<p>コンフィグがロードされていない場合は、このメソッドを未定義値を返します。</p>
+<p>&#x30B3;&#x30F3;&#x30D5;&#x30A3;&#x30B0;&#x304C;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x3053;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="home_dir">home_dir</h2>
 
 <pre><code>my $home_dir = $api-&gt;home_dir;</code></pre>
 
-<p>ホームディレクトリを取得します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="read_config">read_config</h2>
 
 <pre><code>my $config = $api-&gt;read_config;</code></pre>
 
-<p>ホームディレクトリの「giblog.conf」を解析して、ハッシュリファレンスを返します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x300C;giblog.conf&#x300D;&#x3092;&#x89E3;&#x6790;&#x3057;&#x3066;&#x3001;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x30EA;&#x30D5;&#x30A1;&#x30EC;&#x30F3;&#x30B9;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>「giblog.conf」は正しいハッシュリファレンスで終わる必要があります。そうでなければ、例外が発生します。</p>
+<p>&#x300C;giblog.conf&#x300D;&#x306F;&#x6B63;&#x3057;&#x3044;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x30EA;&#x30D5;&#x30A1;&#x30EC;&#x30F3;&#x30B9;&#x3067;&#x7D42;&#x308F;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x305D;&#x3046;&#x3067;&#x306A;&#x3051;&#x308C;&#x3070;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code># giblog.conf
 {
@@ -91,108 +91,108 @@
   site_url =&gt; &#39;http://somesite.example&#39;,
 }</code></pre>
 
-<p>「read_config」を呼び出した後は、「config」メソッドで、コンフィグを取得することができます。</p>
+<p>&#x300C;read_config&#x300D;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x305F;&#x5F8C;&#x306F;&#x3001;&#x300C;config&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x3001;&#x30B3;&#x30F3;&#x30D5;&#x30A3;&#x30B0;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="clear_config">clear_config</h2>
 
 <pre><code>$api-&gt;clear_config;</code></pre>
 
-<p>コンフィグをクリアします。未定義値がコンフィグに設定されます。</p>
+<p>&#x30B3;&#x30F3;&#x30D5;&#x30A3;&#x30B0;&#x3092;&#x30AF;&#x30EA;&#x30A2;&#x3057;&#x307E;&#x3059;&#x3002;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x304C;&#x30B3;&#x30F3;&#x30D5;&#x30A3;&#x30B0;&#x306B;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="create_dir">create_dir</h2>
 
 <pre><code>$api-&gt;create_dir($dir);</code></pre>
 
-<p>ディレクトリを作成します。</p>
+<p>&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ディレクトリの作成に失敗した場合は、例外が発生します。</p>
+<p>&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4F5C;&#x6210;&#x306B;&#x5931;&#x6557;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="create_file">create_file</h2>
 
 <pre><code>$api-&gt;create_file($file);</code></pre>
 
-<p>ファイルを作成します。</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ファイルの作成に失敗した場合は、例外が発生します。</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x306B;&#x5931;&#x6557;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="write_to_file">write_to_file</h2>
 
 <pre><code>$api-&gt;write_to_file($file, $content);</code></pre>
 
-<p>コンテンツをファイルに書き込みます。コンテンツはUTF-8にエンコードされます。</p>
+<p>&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;UTF-8&#x306B;&#x30A8;&#x30F3;&#x30B3;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ファイルが存在していない場合は、自動的に作成されます。</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x5B58;&#x5728;&#x3057;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ファイルの作成に失敗すれば、例外が発生します。</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x306B;&#x5931;&#x6557;&#x3059;&#x308C;&#x3070;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="slurp_file">slurp_file</h2>
 
 <pre><code>my $content = $api-&gt;slurp_file($file);</code></pre>
 
-<p>ファイルのコンテンツを取得します。コンテンツは、UTF-8からデコードされます。</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x3001;UTF-8&#x304B;&#x3089;&#x30C7;&#x30B3;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ファイルが存在しない場合は、例外が発生します。</p>
+<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x5B58;&#x5728;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="rel_file">rel_file</h2>
 
 <pre><code>my $file = $api-&gt;rel_file(&#39;foo/bar&#39;);</code></pre>
 
-<p>ホームディレクトリのパスと指定された相対パスを結合したものを返します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x30D1;&#x30B9;&#x3068;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x76F8;&#x5BFE;&#x30D1;&#x30B9;&#x3092;&#x7D50;&#x5408;&#x3057;&#x305F;&#x3082;&#x306E;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ホームディレクトリが設定されていない場合は、指定されたパスを返します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x30D1;&#x30B9;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="run_command">run_command</h2>
 
 <pre><code>$api-&gt;run_command($command_name, @args);</code></pre>
 
-<p>コマンドクラスをロードして、オブジェクトを作成し、「run」メソッドを実行します。</p>
+<p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x3001;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>たとえば、コマンド名が「build」で、対応する「Giblog::Command::build」モジュールがロードされたとすれば、このオブジェクトが生成され、「run」メソッドが実行されます。</p>
+<p>&#x305F;&#x3068;&#x3048;&#x3070;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x540D;&#x304C;&#x300C;build&#x300D;&#x3067;&#x3001;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x300C;Giblog::Command::build&#x300D;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x304C;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x305F;&#x3068;&#x3059;&#x308C;&#x3070;&#x3001;&#x3053;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x751F;&#x6210;&#x3055;&#x308C;&#x3001;&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>モジュールのロードに失敗すると、例外が発生します。</p>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x30ED;&#x30FC;&#x30C9;&#x306B;&#x5931;&#x6557;&#x3059;&#x308B;&#x3068;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="create_website_from_proto">create_website_from_proto</h2>
 
 <pre><code>$api-&gt;create_website_from_proto($home_dir, $module_name);</code></pre>
 
-<p>Webサイトのホームディレクトリを作成し、プロトタイプディレクトリからファイルをコピーします。</p>
+<p>Web&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>プロトタイプディレクトリは、モジュール名から自動的に検知されます。</p>
+<p>&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306F;&#x3001;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x540D;&#x304B;&#x3089;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x691C;&#x77E5;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>モジュール名が「Giblog::Command::new_foo」で、ロードされたパスが「lib/Giblog/Command/new_foo.pm」であれば、プロトタイプディレクトリは「lib/Giblog/Command/new_foo/proto」になります。</p>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x540D;&#x304C;&#x300C;Giblog::Command::new_foo&#x300D;&#x3067;&#x3001;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x305F;&#x30D1;&#x30B9;&#x304C;&#x300C;lib/Giblog/Command/new_foo.pm&#x300D;&#x3067;&#x3042;&#x308C;&#x3070;&#x3001;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306F;&#x300C;lib/Giblog/Command/new_foo/proto&#x300D;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>lib/Giblog/Command/new_foo.pm
                   /new_foo/proto</code></pre>
 
-<p>モジュールは「create_website_from_proto」呼び出される前にロードされる必要があります。そうでなければ、例外が発生します。</p>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306F;&#x300C;create_website_from_proto&#x300D;&#x547C;&#x3073;&#x51FA;&#x3055;&#x308C;&#x308B;&#x524D;&#x306B;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x305D;&#x3046;&#x3067;&#x306A;&#x3051;&#x308C;&#x3070;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ホームディレクトリが設定されていない場合は、例外が発生します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ホームディレクトリがすでに存在していた場合は、例外が発生します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x3059;&#x3067;&#x306B;&#x5B58;&#x5728;&#x3057;&#x3066;&#x3044;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>ディレクトリの作成に失敗した場合は、例外が発生します。</p>
+<p>&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4F5C;&#x6210;&#x306B;&#x5931;&#x6557;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>モジュール名に対応するプロトタイプディレクトリが指定されなかった場合は、例外が発生します。</p>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x540D;&#x306B;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>モジュール名に対応するプロトタイプディレクトリが見つからなかった場合は、例外が発生します。</p>
+<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x540D;&#x306B;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x898B;&#x3064;&#x304B;&#x3089;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="copy_static_files_to_public">copy_static_files_to_public</h2>
 
 <pre><code>$api-&gt;copy_static_files_to_public;</code></pre>
 
-<p>「templates/static」ディレクトリの中の静的ファイルを「public」ディレクトリにコピーします。</p>
+<p>&#x300C;templates/static&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x9759;&#x7684;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x300C;public&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="get_templates_files">get_templates_files</h2>
 
 <pre><code>my $files = $api-&gt;get_templates_files;</code></pre>
 
-<p>ホームディレクトリの中の「templates」ディレクトリからファイル名の一覧を取得します。</p>
+<p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>「templates/common」ディレクトリと「templates/static」ディレクトリと隠しファイル(「.」で始まるもの) は含まれません。</p>
+<p>&#x300C;templates/common&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3068;&#x300C;templates/static&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3068;&#x96A0;&#x3057;&#x30D5;&#x30A1;&#x30A4;&#x30EB;(&#x300C;.&#x300D;&#x3067;&#x59CB;&#x307E;&#x308B;&#x3082;&#x306E;) &#x306F;&#x542B;&#x307E;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;</p>
 
-<p>取得したファイル名は「templates」ディレクトリからの相対パスです。</p>
+<p>&#x53D6;&#x5F97;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x306F;&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x306E;&#x76F8;&#x5BFE;&#x30D1;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
 
-<p>たとえば、以下のようなファイル名です。</p>
+<p>&#x305F;&#x3068;&#x3048;&#x3070;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x3067;&#x3059;&#x3002;</p>
 
 <pre><code>index.html
 blog/20190312121345.html
@@ -202,19 +202,19 @@ blog/20190314452341.html</code></pre>
 
 <pre><code>$api-&gt;get_content($data);</code></pre>
 
-<p>「templates」ディレクトリからの相対ファイル名からコンテンツを取得します。コンテンツは、UTF-8からデコードされます。</p>
+<p>&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x306E;&#x76F8;&#x5BFE;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&#x304B;&#x3089;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x3001;UTF-8&#x304B;&#x3089;&#x30C7;&#x30B3;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{file}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># templates/index.htmlからコンテンツを取得
+<pre><code># templates/index.html&#x304B;&#x3089;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x53D6;&#x5F97;
 $data-&gt;{file} = &#39;index.html&#39;;
 $api-&gt;get_content($data);
 my $content = $data-&gt;{content};</code></pre>
@@ -223,19 +223,19 @@ my $content = $data-&gt;{content};</code></pre>
 
 <pre><code>$api-&gt;parse_giblog_syntax($data);</code></pre>
 
-<p>入力テキストを「Giblog syntax」として解析し、出力を返します。</p>
+<p>&#x5165;&#x529B;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x300C;Giblog syntax&#x300D;&#x3068;&#x3057;&#x3066;&#x89E3;&#x6790;&#x3057;&#x3001;&#x51FA;&#x529B;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
-
-<pre><code>$data-&gt;{content}</code></pre>
-
-<p><b>出力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
-<pre><code># 入力をGiblog記法として解析
+<pre><code>$data-&gt;{content}</code></pre>
+
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
+
+<pre><code># &#x5165;&#x529B;&#x3092;Giblog&#x8A18;&#x6CD5;&#x3068;&#x3057;&#x3066;&#x89E3;&#x6790;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 Hello World!
 
@@ -253,18 +253,18 @@ EOS
 $api-&gt;parse_giblog_syntax($data);
 my $content = $data-&gt;{content};</code></pre>
 
-<p><b>Giblog記法</b></p>
+<p><b>Giblog&#x8A18;&#x6CD5;</b></p>
 
-<p>Giblog記法は、コンテンツを簡単に記述するための簡潔な記法です。</p>
+<p>Giblog&#x8A18;&#x6CD5;&#x306F;&#x3001;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x3092;&#x7C21;&#x5358;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x7C21;&#x6F54;&#x306A;&#x8A18;&#x6CD5;&#x3067;&#x3059;&#x3002;</p>
 
 <dl>
 
-<dt>1. pタグを自動的に追加</dt>
+<dt>1. p&#x30BF;&#x30B0;&#x3092;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x8FFD;&#x52A0;</dt>
 <dd>
 
-<p>行の先頭がインライン要素で始まった場合は、自動的にpタグが追加されます。</p>
+<p>&#x884C;&#x306E;&#x5148;&#x982D;&#x304C;&#x30A4;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x8981;&#x7D20;&#x3067;&#x59CB;&#x307E;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x81EA;&#x52D5;&#x7684;&#x306B;p&#x30BF;&#x30B0;&#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<pre><code># 入力
+<pre><code># &#x5165;&#x529B;
 Hello World!
 
 &lt;b&gt;Hi, Yuki&lt;/b&gt;
@@ -273,7 +273,7 @@ Hello World!
   OK
 &lt;/div&gt;
 
-# 出力
+# &#x51FA;&#x529B;
 &lt;p&gt;
   Hello World!
 &lt;/p&gt;
@@ -284,20 +284,20 @@ Hello World!
   OK
 &lt;/div&gt;</code></pre>
 
-<p>空の行は削除されます。</p>
+<p>&#x7A7A;&#x306E;&#x884C;&#x306F;&#x524A;&#x9664;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
 </dd>
-<dt>2. preタグの中にある&gt;と&lt;をエスケープ</dt>
+<dt>2. pre&#x30BF;&#x30B0;&#x306E;&#x4E2D;&#x306B;&#x3042;&#x308B;&gt;&#x3068;&lt;&#x3092;&#x30A8;&#x30B9;&#x30B1;&#x30FC;&#x30D7;</dt>
 <dd>
 
-<p>行の先頭がpreタグで始まり、行の先頭がpreの終了タグで始まる行の間で、&gt;と&lt;をHTMLエスケープします。</p>
+<p>&#x884C;&#x306E;&#x5148;&#x982D;&#x304C;pre&#x30BF;&#x30B0;&#x3067;&#x59CB;&#x307E;&#x308A;&#x3001;&#x884C;&#x306E;&#x5148;&#x982D;&#x304C;pre&#x306E;&#x7D42;&#x4E86;&#x30BF;&#x30B0;&#x3067;&#x59CB;&#x307E;&#x308B;&#x884C;&#x306E;&#x9593;&#x3067;&#x3001;&gt;&#x3068;&lt;&#x3092;HTML&#x30A8;&#x30B9;&#x30B1;&#x30FC;&#x30D7;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<pre><code># 入力
+<pre><code># &#x5165;&#x529B;
 &lt;pre&gt;
 my $foo = 1 &gt; 3 &amp;&amp; 2 &lt; 5;
 &lt;/pre&gt;
 
-# 出力
+# &#x51FA;&#x529B;
 &lt;pre&gt;
 my $foo = 1 &amp;gt; 3 &amp;&amp; 2 &amp;lt; 5;
 &lt;/pre&gt;</code></pre>
@@ -309,21 +309,21 @@ my $foo = 1 &amp;gt; 3 &amp;&amp; 2 &amp;lt; 5;
 
 <pre><code>$api-&gt;parse_title($data);</code></pre>
 
-<p>クラス名が「title」のタグのテキストからタイトル(title)を取得します。</p>
+<p>&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x304C;&#x300C;title&#x300D;&#x306E;&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x304B;&#x3089;&#x30BF;&#x30A4;&#x30C8;&#x30EB;(title)&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>タイトルを取得できない場合は、タイトルは未定義値になります。</p>
+<p>&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306F;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{title}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># タイトルを取得
+<pre><code># &#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x53D6;&#x5F97;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;div class=&quot;title&quot;&gt;Perl Tutorial&lt;/div&gt;
 EOS
@@ -334,21 +334,21 @@ my $title = $data-&gt;{title};</code></pre>
 
 <pre><code>$api-&gt;parse_title_from_first_h_tag($data);</code></pre>
 
-<p>最初のh1, h2, h3, h4, h5, h6タグのテキストからタイトル(title)を取得します。</p>
+<p>&#x6700;&#x521D;&#x306E;h1, h2, h3, h4, h5, h6&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x304B;&#x3089;&#x30BF;&#x30A4;&#x30C8;&#x30EB;(title)&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>タイトルを取得できない場合は、タイトルは未定義値になります。</p>
+<p>&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306F;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{title}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># タイトルを取得
+<pre><code># &#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x53D6;&#x5F97;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;h1&gt;Perl Tutorial&lt;/h1&gt;
 EOS
@@ -360,28 +360,28 @@ my $title = $data-&gt;{title};</code></pre>
 <pre><code>$api-&gt;add_page_link($data);
 $api-&gt;add_page_link($data, $opt);</code></pre>
 
-<p>クラス名が「title」のタグのテキストにページリンクを追加します。</p>
+<p>&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x304C;&#x300C;title&#x300D;&#x306E;&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x306B;&#x30DA;&#x30FC;&#x30B8;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>タイトルを取得できない場合は、コンテンツは変化しません。</p>
+<p>&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x5909;&#x5316;&#x3057;&#x307E;&#x305B;&#x3093;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{file}
 $data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p>「file」は、「templates」ディレクトリからの相対パスです。</p>
+<p>&#x300C;file&#x300D;&#x306F;&#x3001;&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x306E;&#x76F8;&#x5BFE;&#x30D1;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
 
-<p>追加されるリンクは、「/」と「file」の値を結合したものです。</p>
+<p>&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x3001;&#x300C;/&#x300D;&#x3068;&#x300C;file&#x300D;&#x306E;&#x5024;&#x3092;&#x7D50;&#x5408;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;</p>
 
-<p>$opt-&gt;{root}が指定されている場合は、これが$data-&gt;{file}にマッチした場合は、追加されるリンクは「/」になります。</p>
+<p>$opt-&gt;{root}&#x304C;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x3053;&#x308C;&#x304C;$data-&gt;{file}&#x306B;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x300C;/&#x300D;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># ページリンクを追加
+<pre><code># &#x30DA;&#x30FC;&#x30B8;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;
 $data-&gt;{file} = &#39;blog/20181012123456.html&#39;;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;div class=&quot;title&quot;&gt;Perl Tutorial&lt;/div&gt;
@@ -389,13 +389,13 @@ EOS
 $api-&gt;add_page_link($data);
 my $content = $data-&gt;{content};</code></pre>
 
-<p>コンテンツは以下に変更されます。</p>
+<p>&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x4EE5;&#x4E0B;&#x306B;&#x5909;&#x66F4;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>&lt;div class=&quot;title&quot;&gt;&lt;a href=&quot;/blog/20181012123456.html&quot;&gt;Perl Tutorial&lt;/a&gt;&lt;/div&gt;</code></pre>
 
 <p><b>Example: root page</b></p>
 
-<pre><code># ページリンクを追加
+<pre><code># &#x30DA;&#x30FC;&#x30B8;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;
 $data-&gt;{file} = &#39;index.html&#39;;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;div class=&quot;title&quot;&gt;Perl Tutorial&lt;/div&gt;
@@ -403,7 +403,7 @@ EOS
 $api-&gt;add_page_link($data);
 my $content = $data-&gt;{content};</code></pre>
 
-<p>コンテンツは以下に変更されます。</p>
+<p>&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x4EE5;&#x4E0B;&#x306B;&#x5909;&#x66F4;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>&lt;div class=&quot;title&quot;&gt;&lt;a href=&quot;/&quot;&gt;Perl Tutorial&lt;/a&gt;&lt;/div&gt;</code></pre>
 
@@ -412,28 +412,28 @@ my $content = $data-&gt;{content};</code></pre>
 <pre><code>$api-&gt;add_page_link_to_first_h_tag($data);
 $api-&gt;add_page_link_to_first_h_tag($data, $opt);</code></pre>
 
-<p>ページリンクを最初のh1, h2, h3, h4, h5, h6タグのテキストに追加します。</p>
+<p>&#x30DA;&#x30FC;&#x30B8;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x6700;&#x521D;&#x306E;h1, h2, h3, h4, h5, h6&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>タイトルを取得できない場合は、コンテンツは変更されません。</p>
+<p>&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x5909;&#x66F4;&#x3055;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{file}
 $data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p>「file」は「templates」ディレクトリからの相対パスです。</p>
+<p>&#x300C;file&#x300D;&#x306F;&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x306E;&#x76F8;&#x5BFE;&#x30D1;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
 
-<p>追加されるリンクは、「/」と「file」の値を結合したパスです。</p>
+<p>&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x3001;&#x300C;/&#x300D;&#x3068;&#x300C;file&#x300D;&#x306E;&#x5024;&#x3092;&#x7D50;&#x5408;&#x3057;&#x305F;&#x30D1;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
 
-<p>$opt-&gt;{root}が指定されており、これが$data-&gt;{file}にマッチした場合は、追加されるリンクは「/」になります。</p>
+<p>$opt-&gt;{root}&#x304C;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x304A;&#x308A;&#x3001;&#x3053;&#x308C;&#x304C;$data-&gt;{file}&#x306B;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x300C;/&#x300D;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>サンプル: エントリーページ</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;: &#x30A8;&#x30F3;&#x30C8;&#x30EA;&#x30FC;&#x30DA;&#x30FC;&#x30B8;</b></p>
 
-<pre><code># ページリンクを追加
+<pre><code># &#x30DA;&#x30FC;&#x30B8;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;
 $data-&gt;{file} = &#39;blog/20181012123456.html&#39;;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;h1&gt;Perl Tutorial&lt;/h1&gt;
@@ -441,13 +441,13 @@ EOS
 $api-&gt;add_page_link_to_first_h_tag($data);
 my $content = $data-&gt;{content};</code></pre>
 
-<p>コンテンツは、以下に変更されます。</p>
+<p>&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306B;&#x5909;&#x66F4;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>&lt;h1&gt;&lt;a href=&quot;/blog/20181012123456.html&quot;&gt;Perl Tutorial&lt;/a&gt;&lt;/h1&gt;</code></pre>
 
-<p><b>サンプル: ルート</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;: &#x30EB;&#x30FC;&#x30C8;</b></p>
 
-<pre><code># ページリンクを追加
+<pre><code># &#x30DA;&#x30FC;&#x30B8;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;
 $data-&gt;{file} = &#39;index.html&#39;;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;h1&gt;Perl Tutorial&lt;/h1&gt;
@@ -455,7 +455,7 @@ EOS
 $api-&gt;add_page_link_to_first_h_tag($data);
 my $content = $data-&gt;{content};</code></pre>
 
-<p>コンテンツは以下に変更されます。</p>
+<p>&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;&#x4EE5;&#x4E0B;&#x306B;&#x5909;&#x66F4;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>&lt;h1&gt;&lt;a href=&quot;/&quot;&gt;Perl Tutorial&lt;/a&gt;&lt;/h1&gt;</code></pre>
 
@@ -463,23 +463,23 @@ my $content = $data-&gt;{content};</code></pre>
 
 <pre><code>$api-&gt;parse_description($data);</code></pre>
 
-<p>クラス名が「description」のタグのテキストから説明(description)を取得します。</p>
+<p>&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x304C;&#x300C;description&#x300D;&#x306E;&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x304B;&#x3089;&#x8AAC;&#x660E;(description)&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>左右の空白文字は、削除されます。これは、Unicodeの空白文字です。</p>
+<p>&#x5DE6;&#x53F3;&#x306E;&#x7A7A;&#x767D;&#x6587;&#x5B57;&#x306F;&#x3001;&#x524A;&#x9664;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306F;&#x3001;Unicode&#x306E;&#x7A7A;&#x767D;&#x6587;&#x5B57;&#x3067;&#x3059;&#x3002;</p>
 
-<p>説明が取得できなかった場合は、説明は、未定義値になります。</p>
+<p>&#x8AAC;&#x660E;&#x304C;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x8AAC;&#x660E;&#x306F;&#x3001;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{description}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># 説明を取得
+<pre><code># &#x8AAC;&#x660E;&#x3092;&#x53D6;&#x5F97;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;div class=&quot;description&quot;&gt;
   Perl Tutorial is site for beginners of Perl 
@@ -488,31 +488,31 @@ EOS
 $api-&gt;parse_description($data);
 my $description = $data-&gt;{description};</code></pre>
 
-<p>出力の説明は「Perl Tutorial is site for beginners of Perl」になります。</p>
+<p>&#x51FA;&#x529B;&#x306E;&#x8AAC;&#x660E;&#x306F;&#x300C;Perl Tutorial is site for beginners of Perl&#x300D;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="parse_description_from_first_p_tag">parse_description_from_first_p_tag</h2>
 
 <pre><code>$api-&gt;parse_description_from_first_p_tag($data);</code></pre>
 
-<p>最初のpタグのテキストから説明を取得します。</p>
+<p>&#x6700;&#x521D;&#x306E;p&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x304B;&#x3089;&#x8AAC;&#x660E;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>HTMLタグは、削除されます。</p>
+<p>HTML&#x30BF;&#x30B0;&#x306F;&#x3001;&#x524A;&#x9664;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>左右の空白文字は削除されます。これは、Unicodeの空白文字です。</p>
+<p>&#x5DE6;&#x53F3;&#x306E;&#x7A7A;&#x767D;&#x6587;&#x5B57;&#x306F;&#x524A;&#x9664;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306F;&#x3001;Unicode&#x306E;&#x7A7A;&#x767D;&#x6587;&#x5B57;&#x3067;&#x3059;&#x3002;</p>
 
-<p>説明が取得できなかった場合は、説明は、未定義値になります。</p>
+<p>&#x8AAC;&#x660E;&#x304C;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x8AAC;&#x660E;&#x306F;&#x3001;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{description}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># 説明を取得
+<pre><code># &#x8AAC;&#x660E;&#x3092;&#x53D6;&#x5F97;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;p&gt;
   Perl Tutorial is site for beginners of Perl 
@@ -530,21 +530,21 @@ my $description = $data-&gt;{description};</code></pre>
 
 <pre><code>$api-&gt;parse_keywords($data);</code></pre>
 
-<p>クラス名が「keywords」のタグのテキストからキーワード(keywords)を取得します。</p>
+<p>&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x304C;&#x300C;keywords&#x300D;&#x306E;&#x30BF;&#x30B0;&#x306E;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x304B;&#x3089;&#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;(keywords)&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>キーワードが取得できなかった場合は、キーワードは、未定義値になります。</p>
+<p>&#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;&#x304C;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;&#x306F;&#x3001;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{keywords}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># キーワードの取得
+<pre><code># &#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;&#x306E;&#x53D6;&#x5F97;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;div class=&quot;keywords&quot;&gt;Perl,Tutorial&lt;/div&gt;
 EOS
@@ -555,40 +555,40 @@ my $keywords = $data-&gt;{keywords};</code></pre>
 
 <pre><code>$api-&gt;parse_first_img_src($data);</code></pre>
 
-<p>最初のimgタグのsrc属性からイメージソースを取得します。</p>
+<p>&#x6700;&#x521D;&#x306E;img&#x30BF;&#x30B0;&#x306E;src&#x5C5E;&#x6027;&#x304B;&#x3089;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x30BD;&#x30FC;&#x30B9;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p>イメージソースを取得できなかった場合は、イメージソースは未定義値になります。</p>
+<p>&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x30BD;&#x30FC;&#x30B9;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x30BD;&#x30FC;&#x30B9;&#x306F;&#x672A;&#x5B9A;&#x7FA9;&#x5024;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{img_src}</code></pre>
 
-<p><b>サンプル:</b></p>
+<p><b>&#x30B5;&#x30F3;&#x30D7;&#x30EB;:</b></p>
 
-<pre><code># 最初のイメージソースを取得
+<pre><code># &#x6700;&#x521D;&#x306E;&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x30BD;&#x30FC;&#x30B9;&#x3092;&#x53D6;&#x5F97;
 $data-&gt;{content} = &lt;&lt;&#39;EOS&#39;;
 &lt;img class=&quot;ppp&quot; src=&quot;/path&quot;&gt;
 EOS
 $api-&gt;parse_first_img_src($data);
 my $img_src = $data-&gt;{img_src};</code></pre>
 
-<p>出力の「img_src」は「/path」です。</p>
+<p>&#x51FA;&#x529B;&#x306E;&#x300C;img_src&#x300D;&#x306F;&#x300C;/path&#x300D;&#x3067;&#x3059;&#x3002;</p>
 
 <h2 id="read_common_templates">read_common_templates</h2>
 
 <pre><code>$api-&gt;read_common_templates($data);</code></pre>
 
-<p>「templates/common」ディレクトリの中の共通テンプレートを読み込みます。</p>
+<p>&#x300C;templates/common&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x5171;&#x901A;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x307E;&#x3059;&#x3002;</p>
 
-<p>次のテンプレートがロードされます。コンテンツはUTF-8からデコードされます。</p>
+<p>&#x6B21;&#x306E;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x304C;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;UTF-8&#x304B;&#x3089;&#x30C7;&#x30B3;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>「meta.html」「header.html」「footer.html」「side.html」「top.html」「bottom.html」</p>
+<p>&#x300C;meta.html&#x300D;&#x300C;header.html&#x300D;&#x300C;footer.html&#x300D;&#x300C;side.html&#x300D;&#x300C;top.html&#x300D;&#x300C;bottom.html&#x300D;</p>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{meta}
 $data-&gt;{header}
@@ -599,49 +599,49 @@ $data-&gt;{bottom}</code></pre>
 
 <h2 id="add_meta_title">add_meta_title</h2>
 
-<p>titleタグをmetaセクションに追加します。</p>
+<p>title&#x30BF;&#x30B0;&#x3092;meta&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{title}
 $data-&gt;{meta}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{meta}</code></pre>
 
-<p>「meta」の値が「foo」で「title」が「Perl Tutorial」だった場合は、「meta」の出力値は「foo\n&lt;title&gt;Perl Tutorial&lt;/title&gt;」になります。</p>
+<p>&#x300C;meta&#x300D;&#x306E;&#x5024;&#x304C;&#x300C;foo&#x300D;&#x3067;&#x300C;title&#x300D;&#x304C;&#x300C;Perl Tutorial&#x300D;&#x3060;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x300C;meta&#x300D;&#x306E;&#x51FA;&#x529B;&#x5024;&#x306F;&#x300C;foo\n&lt;title&gt;Perl Tutorial&lt;/title&gt;&#x300D;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="add_meta_description">add_meta_description</h2>
 
-<p>meta descriptionタグをmetaセクションに追加します。</p>
+<p>meta description&#x30BF;&#x30B0;&#x3092;meta&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{description}
 $data-&gt;{meta}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{meta}</code></pre>
 
-<p>「meta」の値が「foo」で「description」が「Perl is good」の場合は, 「meta」の出力の値は、「foo\n&lt;meta name=&quot;description&quot; content=&quot;Perl is good&quot;&gt;」になります。</p>
+<p>&#x300C;meta&#x300D;&#x306E;&#x5024;&#x304C;&#x300C;foo&#x300D;&#x3067;&#x300C;description&#x300D;&#x304C;&#x300C;Perl is good&#x300D;&#x306E;&#x5834;&#x5408;&#x306F;, &#x300C;meta&#x300D;&#x306E;&#x51FA;&#x529B;&#x306E;&#x5024;&#x306F;&#x3001;&#x300C;foo\n&lt;meta name=&quot;description&quot; content=&quot;Perl is good&quot;&gt;&#x300D;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="build_entry">build_entry</h2>
 
-<p>エントリのHTMLを「content」「top」「bottom」から作成します。</p>
+<p>&#x30A8;&#x30F3;&#x30C8;&#x30EA;&#x306E;HTML&#x3092;&#x300C;content&#x300D;&#x300C;top&#x300D;&#x300C;bottom&#x300D;&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}
 $data-&gt;{top}
 $data-&gt;{bottom}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p>出力は、以下のHTMLです。</p>
+<p>&#x51FA;&#x529B;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;HTML&#x3067;&#x3059;&#x3002;</p>
 
 <pre><code>&lt;div class=&quot;entry&quot;&gt;
   &lt;div class=&quot;top&quot;&gt;
@@ -657,9 +657,9 @@ $data-&gt;{bottom}</code></pre>
 
 <h2 id="build_html">build_html</h2>
 
-<p>HTMLの全体を「content」「header」「bottom」「side」「footer」から作成します。</p>
+<p>HTML&#x306E;&#x5168;&#x4F53;&#x3092;&#x300C;content&#x300D;&#x300C;header&#x300D;&#x300C;bottom&#x300D;&#x300C;side&#x300D;&#x300C;footer&#x300D;&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}
 $data-&gt;{header}
@@ -667,11 +667,11 @@ $data-&gt;{bottom}
 $data-&gt;{side}
 $data-&gt;{footer}</code></pre>
 
-<p><b>出力:</b></p>
+<p><b>&#x51FA;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}</code></pre>
 
-<p>出力は、以下のHTMLになります。</p>
+<p>&#x51FA;&#x529B;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;HTML&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -700,11 +700,11 @@ $data-&gt;{footer}</code></pre>
 
 <h2 id="write_to_public_file">write_to_public_file</h2>
 
-<p>コンテンツ(content)を「public」ディレクトリの中のファイルに書き込みます。コンテンツはUTF-8にエンコードされます。</p>
+<p>&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;(content)&#x3092;&#x300C;public&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x307E;&#x3059;&#x3002;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306F;UTF-8&#x306B;&#x30A8;&#x30F3;&#x30B3;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
 
-<p>「file」の値が「index.html」であれば, 書き込まれるパスは「public/index.html」です。</p>
+<p>&#x300C;file&#x300D;&#x306E;&#x5024;&#x304C;&#x300C;index.html&#x300D;&#x3067;&#x3042;&#x308C;&#x3070;, &#x66F8;&#x304D;&#x8FBC;&#x307E;&#x308C;&#x308B;&#x30D1;&#x30B9;&#x306F;&#x300C;public/index.html&#x300D;&#x3067;&#x3059;&#x3002;</p>
 
-<p><b>入力:</b></p>
+<p><b>&#x5165;&#x529B;:</b></p>
 
 <pre><code>$data-&gt;{content}
 $data-&gt;{file}</code></pre>
