@@ -5,6 +5,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/css/common.css">
+<script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/google-code-prettify/prettify.js"></script>
+<link  type="text/css" rel="stylesheet" href="/js/google-code-prettify/prettify.css"/>
+
+<script>
+  $(function(){
+    // google code prettifyの有効化
+    $("pre").addClass("prettyprint");
+    function init(event){
+      prettyPrint();
+    }
+    if(window.addEventListener)window.addEventListener("load",init,false);
+    else if(window.attachEvent)window.attachEvent("onload",init);
+  });
+</script>
 
 <title>Giblog::API - Giblog API</title>
 <meta name="description" content="Giblog::APIではHTMLコンテンツを扱うためのメソッドを定義しています。">
@@ -14,7 +29,7 @@
       <div class="header">
         <!-- header -->
 <h1>
-  <a class="site-title" href="/">Giblog - git世代のためのブログ作成ツール</a>
+  <a class="site-title" href="/">Giblog - Gitで管理できるWebサイトとブログの生成ツール</a>
 </h1>
 
       </div>
@@ -140,16 +155,6 @@
 <p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x30D1;&#x30B9;&#x3068;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x76F8;&#x5BFE;&#x30D1;&#x30B9;&#x3092;&#x7D50;&#x5408;&#x3057;&#x305F;&#x3082;&#x306E;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <p>&#x30DB;&#x30FC;&#x30E0;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x30D1;&#x30B9;&#x3092;&#x8FD4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-
-<h2 id="run_command">run_command</h2>
-
-<pre><code>$api-&gt;run_command($command_name, @args);</code></pre>
-
-<p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x3001;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-
-<p>&#x305F;&#x3068;&#x3048;&#x3070;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x540D;&#x304C;&#x300C;build&#x300D;&#x3067;&#x3001;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x300C;Giblog::Command::build&#x300D;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x304C;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x305F;&#x3068;&#x3059;&#x308C;&#x3070;&#x3001;&#x3053;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x751F;&#x6210;&#x3055;&#x308C;&#x3001;&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
-
-<p>&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x30ED;&#x30FC;&#x30C9;&#x306B;&#x5931;&#x6557;&#x3059;&#x308B;&#x3068;&#x3001;&#x4F8B;&#x5916;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 
 <h2 id="create_website_from_proto">create_website_from_proto</h2>
 
