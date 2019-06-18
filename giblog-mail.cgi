@@ -246,7 +246,7 @@ __DATA__
       <div class="header">
         <!-- header -->
 <h1>
-  <a class="site-title" href="/">Giblog - Gitで管理できるWebサイトとブログの生成ツール</a>
+  <a class="site-title" href="/">Giblog - Gitで管理できるWebサイトとブログの作成ツール</a>
 </h1>
 
       </div>
