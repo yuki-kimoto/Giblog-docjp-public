@@ -288,23 +288,17 @@ templates/common/footer.html     &#x30D5;&#x30C3;&#x30BF;</code></pre>
 
 <h2 id="Web1">Web&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x69CB;&#x7BC9;</h2>
 
+<p>&#x4ED6;&#x306E;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x300C;build&#x300D;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x524D;&#x306B;&#x300C;mysite&#x300D;&#x306B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+
+<pre><code>cd mysite</code></pre>
+
 <p>&#x300C;build&#x300D;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F7F;&#x3046;&#x3068;&#x3001;Web&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x69CB;&#x7BC9;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>giblog build</code></pre>
 
-<p>&#x300C;build&#x300D;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x524D;&#x306B;&#x3001;&#x300C;mysite&#x300D;&#x306B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x69CB;&#x7BC9;&#x51E6;&#x7406;&#x3068;&#x306F;&#x3001;&#x3044;&#x3063;&#x305F;&#x3044;&#x4F55;&#x3067;&#x3059;&#x304B;?\</p>
 
-<pre><code>cd mysite</code></pre>
-
-<p>&#x300C;--home&#x300D;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;&#x3001;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
-
-<pre><code>giblog build --home /home/kimoto/mysite</code></pre>
-
-<p>&#x69CB;&#x7BC9;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x3068;&#x306F;&#x3001;&#x3044;&#x3063;&#x305F;&#x3044;&#x4F55;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;</p>
-
-<p>&#x69CB;&#x7BC9;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x306F;&#x300C;lib/Giblog/Command/build.pm&#x300D;&#x306E;&#x4E2D;&#x306E;&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x66F8;&#x304B;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-
-<p>&#x69CB;&#x7BC9;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x306E;&#x4E3B;&#x306A;&#x90E8;&#x5206;&#x306F;&#x3001;<a href="/Giblog/API.html">Giblog::API</a>&#x306E;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3067;&#x3059;&#x3002;</p>
+<p>&#x69CB;&#x7BC9;&#x51E6;&#x7406;&#x306F;&#x300C;lib/Giblog/Command/build.pm&#x300D;&#x306E;&#x4E2D;&#x306E;&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306B;&#x66F8;&#x304B;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code># &quot;lib/Giblog/Command/build.pm&quot; in web site created by &quot;new_blog&quot; command
 package Giblog::Command::build;
@@ -344,6 +338,15 @@ sub run {
     # Parse title
     $api-&gt;parse_title_from_first_h_tag($data);
 
+    # Edit title
+    my $site_title = $config-&gt;{site_title};
+    if ($data-&gt;{file} eq &#39;index.html&#39;) {
+      $data-&gt;{title} = $site_title;
+    }
+    else {
+      $data-&gt;{title} = &quot;$data-&gt;{title} - $site_title&quot;;
+    }
+
     # Add page link
     $api-&gt;add_page_link_to_first_h_tag($data, {root =&gt; &#39;index.html&#39;});
 
@@ -376,15 +379,13 @@ sub run {
   $self-&gt;create_list;
 }</code></pre>
 
-<p>&#x300C;run&#x300D;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x3001;&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x3059;&#x3079;&#x3066;&#x306E;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x3001;&#x7DE8;&#x96C6;&#x3057;&#x3001;&#x300C;public&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3078;&#x3001;&#x51FA;&#x529B;&#x3092;&#x66F8;&#x304D;&#x8FBC;&#x307F;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3082;&#x3057;&#x5FC5;&#x8981;&#x3067;&#x3042;&#x308C;&#x3070;&#x3001;&#x81EA;&#x5206;&#x81EA;&#x8EAB;&#x3067;&#x3053;&#x306E;&#x69CB;&#x7BC9;&#x51E6;&#x7406;&#x3092;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
-<p>&#x3082;&#x3057;&#x5FC5;&#x8981;&#x3067;&#x3042;&#x308C;&#x3070;&#x3001;&#x81EA;&#x5206;&#x81EA;&#x8EAB;&#x3067;&#x3053;&#x306E;&#x69CB;&#x7BC9;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x3092;&#x7DE8;&#x96C6;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
-
-<p>run&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x4E2D;&#x306E;API&#x3092;&#x7406;&#x89E3;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;<a href="/Giblog/API.html">Giblog::API</a>&#x3092;&#x898B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>run&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x4E2D;&#x306E;API&#x3092;&#x7406;&#x89E3;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;<a href="/Giblog/API.html">Giblog::API</a>&#x3092;&#x898B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
 
 <h2 id="Web2">Web&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x30B5;&#x30FC;&#x30D6;</h2>
 
-<p>&#x3082;&#x3057;Mojolicious&#x3092;&#x6301;&#x3063;&#x3066;&#x3044;&#x308C;&#x3070;&#x3001;Web&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x69CB;&#x7BC9;&#x3068;&#x30B5;&#x30FC;&#x30D6;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3082;&#x3057;<a href="/Mojolicious.html">Mojolicious</a>&#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x3066;&#x3044;&#x308C;&#x3070;&#x3001;Web&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x74B0;&#x5883;&#x3067;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
 <pre><code>morbo serve.pl</code></pre>
 
@@ -393,7 +394,9 @@ sub run {
 <pre><code>Server available at http://127.0.0.1:3000
 Server start</code></pre>
 
-<p>&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x3001;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x308B;&#x3068;&#x3001;&#x30D3;&#x30EB;&#x30C9;&#x3055;&#x308C;&#x3001;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x306F;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30EA;&#x30ED;&#x30FC;&#x30C9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x304B;&#x3089;&#x4E0A;&#x8A18;&#x306E;URL&#x3067;Web&#x30B5;&#x30A4;&#x30C8;&#x3092;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+
+<p>Web&#x30B5;&#x30A4;&#x30C8;&#x306F;&#x300C;templates&#x300D;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306E;&#x4E2D;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x5909;&#x66F4;&#x3055;&#x308C;&#x308B;&#x3068; &#x81EA;&#x52D5;&#x7684;&#x306B;&#x518D;&#x69CB;&#x7BC9;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; &#x624B;&#x52D5;&#x3067;&#x300C;build&#x300D;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
 
 <h1 id="9">&#x8457;&#x8005;</h1>
 
