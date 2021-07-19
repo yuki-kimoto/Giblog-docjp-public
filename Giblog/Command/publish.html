@@ -21,6 +21,8 @@
   });
 </script>
 
+<title>Giblog::Command::publish - Webサイトを公開するコマンド</title>
+<meta name="description" content="L<Giblog::Command::publishはWebサイトを公開するコマンドです。">
   </head>
   <body>
     <div class="container">
@@ -39,7 +41,30 @@
 
   </div>
   <div class="middle">
-    <!-- bottom -->
+    <h1 id="pod">名前</h1>
+
+<p>Giblog::Command::publish - Webサイトを公開するコマンド</p>
+
+<h1 id="pod1">説明</h1>
+
+<p><a href="https://metacpan.org/pod/Giblog::Command::publish">Giblog::Command::publish</a>はWebサイトを公開するコマンドです。</p>
+
+<h1 id="pod2">メソッド</h1>
+
+<p><a href="https://metacpan.org/pod/Giblog::Command::add">Giblog::Command::add</a>は<a href="https://metacpan.org/pod/Giblog::Command">Giblog::Command</a>からすべてのメソッドを継承しており、次の新しいメソッドを実装しています。</p>
+
+<h2 id="run">run</h2>
+
+<pre><code>$command-&gt;run($remote_repository, $branch);</code></pre>
+
+<p>リモートレポジトリ名とブランチ名を指定して、Webサイトを公開します。</p>
+
+<p>これは以下のコマンドと同じです。この例では、リポジトリ名はorigin、ブランチ名はmainです。YY-mm-dd HH:MM:SSは、現在の日付と時刻になります。</p>
+
+<pre><code>git --git-dir=public/.git add --all
+git --git-dir=public/.git commit -m &quot;Published by Giblog at YY-mm-dd HH:MM:SS&quot;
+git --git-dir=public/.git push origin main</code></pre>
+
 
   </div>
   <div class="bottom">

@@ -21,6 +21,8 @@
   });
 </script>
 
+<title>Giblog::Command::serve - Webサイトのサーブコマンド</title>
+<meta name="description" content="L<Giblog::Command::serveはWebサイトをサーブするコマンドです。">
   </head>
   <body>
     <div class="container">
@@ -39,7 +41,28 @@
 
   </div>
   <div class="middle">
-    <!-- bottom -->
+    <h1 id="pod">名前</h1>
+
+<p>Giblog::Command::serve - Webサイトのサーブコマンド</p>
+
+<h1 id="pod1">説明</h1>
+
+<p><a href="https://metacpan.org/pod/Giblog::Command::serve">Giblog::Command::serve</a>はWebサイトをサーブするコマンドです。</p>
+
+<h1 id="pod2">メソッド</h1>
+
+<p><a href="https://metacpan.org/pod/Giblog::Command::add">Giblog::Command::add</a>は<a href="https://metacpan.org/pod/Giblog::Command">Giblog::Command</a>からすべてのメソッドを継承しており、次の新しいメソッドを実装しています。</p>
+
+<h2 id="run">run</h2>
+
+<pre><code>$command-&gt;run;</code></pre>
+
+<p><a href="https://metacpan.org/pod/Mojolicious">Mojolicious</a>の<a href="https://metacpan.org/pod/morbo">morbo</a>コマンドを使って、<code>serve.pl</code>でWebサイトサーブします。</p>
+
+<p>以下のコマンドと同じです。</p>
+
+<pre><code>morbo -w giblog.conf -w lib -w templates serve.pl</code></pre>
+
 
   </div>
   <div class="bottom">

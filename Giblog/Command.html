@@ -43,31 +43,31 @@ L<Giblog::Commandを継承して、L<Giblog::Command::new、L<Giblog::Command::a
 
   </div>
   <div class="middle">
-    <h1 id="">&#x540D;&#x524D;</h1>
+    <h1 id="pod">名前</h1>
 
-<p>Giblog::Command - &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x57FA;&#x5E95;&#x30AF;&#x30E9;&#x30B9;</p>
+<p>Giblog::Command - コマンド基底クラス</p>
 
-<h1 id="1">&#x8AAC;&#x660E;</h1>
+<h1 id="pod1">説明</h1>
 
-<p><a href="/Giblog/Command.html">Giblog::Command</a>&#x306F;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x57FA;&#x5E95;&#x30AF;&#x30E9;&#x30B9;&#x3067;&#x3059;&#x3002;</p>
+<p><a href="https://metacpan.org/pod/Giblog::Command">Giblog::Command</a>は、コマンドの基底クラスです。</p>
 
-<p><a href="/Giblog/Command.html">Giblog::Command</a>&#x3092;&#x7D99;&#x627F;&#x3057;&#x3066;&#x3001;<a href="/Giblog/Command/new.html">Giblog::Command::new</a>&#x3001;<a href="/Giblog/Command/add.html">Giblog::Command::add</a>&#x3001;<a href="/Giblog/Command/build.html">Giblog::Command::build</a>&#x306E;&#x3088;&#x3046;&#x306A;&#x3001;&#x30AA;&#x30EA;&#x30B8;&#x30CA;&#x30EB;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x4F5C;&#x6210;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><a href="https://metacpan.org/pod/Giblog::Command">Giblog::Command</a>を継承して、<a href="https://metacpan.org/pod/Giblog::Command::new">Giblog::Command::new</a>、<a href="https://metacpan.org/pod/Giblog::Command::add">Giblog::Command::add</a>、<a href="https://metacpan.org/pod/Giblog::Command::build">Giblog::Command::build</a>のような、オリジナルのコマンドを作成できます。</p>
 
-<h1 id="2">&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h1>
+<h1 id="pod2">メソッド</h1>
 
 <h2 id="new">new</h2>
 
 <pre><code>$command-&gt;new(%args);</code></pre>
 
-<p><a href="/Giblog/Command.html">Giblog::Command</a>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x751F;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><a href="https://metacpan.org/pod/Giblog::Command">Giblog::Command</a>オブジェクトを生成します。</p>
 
-<p>&#x5F15;&#x6570;:</p>
+<p>引数:</p>
 
 <ul>
 
 <li><p>api</p>
 
-<p><a href="/Giblog/API.html">Giblog::API</a>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</p>
+<p><a href="https://metacpan.org/pod/Giblog::API">Giblog::API</a>オブジェクト</p>
 
 </li>
 </ul>
@@ -76,13 +76,13 @@ L<Giblog::Commandを継承して、L<Giblog::Command::new、L<Giblog::Command::a
 
 <pre><code>$command-&gt;api;</code></pre>
 
-<p><a href="/Giblog/API.html">Giblog::API</a>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><a href="https://metacpan.org/pod/Giblog::API">Giblog::API</a>オブジェクトを取得します。</p>
 
 <h2 id="run">run</h2>
 
 <pre><code>$command-&gt;run(@args);</code></pre>
 
-<p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x3001;&#x30B5;&#x30D6;&#x30AF;&#x30E9;&#x30B9;&#x3067;&#x5B9F;&#x88C5;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>コマンドを実行します。このメソッドは、サブクラスで実装されます。</p>
 
 
   </div>
@@ -95,22 +95,6 @@ L<Giblog::Commandを継承して、L<Giblog::Command::new、L<Giblog::Command::a
         </div>
         <div class="side">
           <!-- side -->
-<div class="side-list">
-  <div class="side-list-title">
-    ドキュメント
-  </div>
-  <ul>
-    <li><a href="/">Giblog</a></li>
-    <li><a href="/Giblog/API.html">Giblog::API</a></li>
-    <li><a href="/Giblog/Command.html">Giblog::Command</a></li>
-    <li><a href="/Giblog/Command/new.html">Giblog::Command::new</a></li>
-    <li><a href="/Giblog/Command/new_website.html">Giblog::Command::new_website</a></li>
-    <li><a href="/Giblog/Command/new_blog.html">Giblog::Command::new_blog</a></li>
-    <li><a href="/Giblog/Command/add.html">Giblog::Command::add</a></li>
-    <li><a href="/Giblog/Command/build.html">Giblog::Command::build</a></li>
-    <li><a href="https://github.com/yuki-kimoto/giblog">リポジトリ</a></li>
-  </ul>
-</div>
 
         </div>
       </div>
