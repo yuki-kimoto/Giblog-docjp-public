@@ -77,8 +77,7 @@
 
         </div>
         <div class="side">
-          <!-- side -->
-
+          
         </div>
       </div>
       <div class="footer">
